@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
